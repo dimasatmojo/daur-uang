@@ -1,4 +1,5 @@
-export const WARNA_UTAMA = '#55CB95';
-export const WARNA_DISABLE = '#C8C8C8';
-export const WARNA_SEKUNDER = '#E0F7EF';
-export const WARNA_ABU_ABU = '#F6F6F6';
+export const ColorPrimary = '#507C5C';
+export const ColorDisabled = '#CDCDCD';
+export const ColorSecondary = '#E0F7EF';
+export const ColorGrey = '#F6F6F6';
+export const ColorWarning = '#FFCC00';

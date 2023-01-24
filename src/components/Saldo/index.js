@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Dimensions } from 'react-native'
 import React from 'react'
-import { WARNA_UTAMA } from '../../utils/constant'
+import { ColorPrimary } from '../../utils/constant'
 import ButtonIcon from '../ButtonIcon';
 import Gap from '../Gap';
 
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     valuePoint: {
         fontSize: 12,
         fontFamily: 'TitilliumWeb-Bold',
-        color: WARNA_UTAMA
+        color: ColorPrimary
     },
     buttonAksi: {
         flexDirection: 'row',

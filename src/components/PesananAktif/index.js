@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text,View, Dimensions, TouchableOpacity} from 'react-native';
 import {IconPesananAktif} from '../../assets';
-import { WARNA_UTAMA, WARNA_WARNING, WARNA_ABU_ABU } from '../../utils/constant';
+import { ColorPrimary, ColorWarning, ColorGrey } from '../../utils/constant';
 
 const PesananAktif = ({title, status}) => {
   return (
@@ -47,6 +47,6 @@ const styles = StyleSheet.create({
   status: (status) => ({
     fontSize: 14,
     fontFamily: 'TitilliumWeb-Light',
-    color: status === 'Sudah Selesai' ? WARNA_UTAMA : status === 'Masih Dicuci' ? WARNA_WARNING : WARNA_ABU_ABU,
+    color: status === 'Sudah Selesai' ? ColorPrimary : status === 'Masih Dicuci' ? ColorWarning : ColorGrey,
   })
 });

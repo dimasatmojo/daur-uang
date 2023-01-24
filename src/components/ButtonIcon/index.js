@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { IconAddSaldo, IconGetPoint, IconEkspress, IconKarpet, IconKiloan, IconSatuan, IconSetrika, IconVip } from '../../assets'
-import { WARNA_SEKUNDER } from '../../utils/constant'
+import { ColorSecondary } from '../../utils/constant'
 
 const ButtonIcon = ({ title, type }) => {
 
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
         marginRight : type === "layanan" ? 30 : 0
     }), 
     button: (type) => ({
-      backgroundColor: WARNA_SEKUNDER,
+      backgroundColor: ColorSecondary,
       padding: type === 'layanan' ? 12 : 7,
       borderRadius: 10,
     }),

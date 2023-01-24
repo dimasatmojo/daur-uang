@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, ImageBackground, Dimensions, Image, ViewCompone
 import React from 'react'
 import { ImageHeader, Logo } from '../../assets'
 import { Saldo, ButtonIcon, PesananAktif } from '../../components'
-import { WARNA_ABU_ABU } from '../../utils/constant'
+import { ColorGrey } from '../../utils/constant'
 import {ScrollView} from 'react-native-gesture-handler'
 
 const Home = () => {
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   pesananAktif: {
     paddingTop: 10,
     paddingHorizontal: 30,
-    backgroundColor: WARNA_ABU_ABU,
+    backgroundColor: ColorGrey,
     flex: 1,
     borderTopRightRadius: 20,
     borderTopLeftRadius: 20,
