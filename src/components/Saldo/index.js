@@ -1,7 +1,8 @@
 import { StyleSheet, Text, View, Dimensions } from 'react-native'
 import React from 'react'
 import { WARNA_UTAMA } from '../../utils/constant'
-import { ButtonIcon, Gap } from '../../components'
+import ButtonIcon from '../ButtonIcon';
+import Gap from '../Gap';
 
 const Saldo = () => {
     return (

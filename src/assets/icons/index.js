@@ -2,8 +2,8 @@ import IconAkun from './akun.svg'
 import IconAkunActive from './akunActive.svg'
 import IconHome from './home.svg'
 import IconHomeActive from './homeActive.svg'
-import IconPesanan from './pesanan.svg'
-import IconPesananActive from './pesananActive.svg'
+import IconRiwayat from './riwayat.svg'
+import IconRiwayatActive from './riwayatActive.svg'
 import IconAddSaldo from './addSaldo.svg'
 import IconGetPoint from './getPoint.svg'
 import IconEkspress from './ekspress.svg'
@@ -19,8 +19,8 @@ export {
     IconAkunActive, 
     IconHome, 
     IconHomeActive, 
-    IconPesanan, 
-    IconPesananActive, 
+    IconRiwayat, 
+    IconRiwayatActive, 
     IconAddSaldo, 
     IconGetPoint,
     IconEkspress,
