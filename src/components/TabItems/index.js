@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { IconAkun, IconAkunActive, IconHome, IconHomeActive, IconRiwayat, IconRiwayatActive } from '../../assets/icons'
-import { WARNA_UTAMA, WARNA_DISABLE } from '../../utils/constant'
+import { ColorPrimary, ColorDisabled } from '../../utils/constant'
 
 const TabItem = ({ isFocused, onPress, onLongPress, label }) => {
     const Icon = () => {
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     },
     text: (isFocused) =>  ({
         fontSize: 13,
-        color: isFocused ? WARNA_UTAMA : WARNA_DISABLE,
+        color: isFocused ? ColorPrimary : ColorDisabled,
         marginTop: 8
     })
 })

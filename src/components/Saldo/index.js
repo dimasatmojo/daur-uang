@@ -58,19 +58,19 @@ const styles = StyleSheet.create({
     },
     labelSaldo: {
         fontSize: 20,
-        fontFamily: 'TitilliumWeb-Regular'
+        fontFamily: 'Montserrat-Regular'
     },
     valueSaldo: {
         fontSize: 20,
-        fontFamily: 'TitilliumWeb-Bold'
+        fontFamily: 'Montserrat-Bold'
     },
     labelPoint: {
         fontSize: 12,
-        fontFamily: 'TitilliumWeb-Regular'
+        fontFamily: 'Montserrat-Regular'
     },
     valuePoint: {
         fontSize: 12,
-        fontFamily: 'TitilliumWeb-Bold',
+        fontFamily: 'Montserrat-Bold',
         color: ColorPrimary
     },
     buttonAksi: {

@@ -42,11 +42,11 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 18,
-    fontFamily: 'TitilliumWeb-SemiBold'
+    fontFamily: 'Montserrat-SemiBold'
   },
   status: (status) => ({
     fontSize: 14,
-    fontFamily: 'TitilliumWeb-Light',
+    fontFamily: 'Montserrat-Light',
     color: status === 'Sudah Selesai' ? ColorPrimary : status === 'Masih Dicuci' ? ColorWarning : ColorGrey,
   })
 });

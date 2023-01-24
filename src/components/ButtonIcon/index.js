@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     }),
     text: (type) => ({
       fontSize: type === 'layanan' ? 14 : 10,
-      fontFamily:type === 'layanan' ? 'TitilliumWeb-Light' : 'TitilliumWeb-Regular',
+      fontFamily:type === 'layanan' ? 'Montserrat-Light' : 'Montserrat-Regular',
       textAlign: 'center',
     }),
   
