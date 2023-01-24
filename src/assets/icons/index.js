@@ -13,6 +13,9 @@ import IconSatuan from './satuan.svg'
 import IconSetrika from './setrika.svg'
 import IconVip from './vip.svg'
 import IconPesananAktif from './pesananAktif.svg'
+import IconLokasi from './lokasi.svg'
+import IconTransaksi from './transaksi.svg'
+import IconTukarPoin from './tukarPoin.svg'
 
 export { 
     IconAkun, 
@@ -29,5 +32,8 @@ export {
     IconSatuan,
     IconSetrika,
     IconVip,
-    IconPesananAktif 
+    IconPesananAktif,
+    IconLokasi,
+    IconTransaksi,
+    IconTukarPoin 
 }

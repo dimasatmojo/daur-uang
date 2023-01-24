@@ -7,20 +7,12 @@ import Gap from '../Gap';
 const Saldo = () => {
     return (
         <View style={styles.container}>
-            <View style={styles.informasiSaldo}>
-                <View style={styles.text}>
-                    <Text style={styles.labelSaldo}>Saldo :</Text>
-                    <Text style={styles.valueSaldo}>Rp. 100.000</Text>
-                </View>
-                <View style={styles.text}>
-                    <Text style={styles.labelPoint}>Antar Point :</Text>
-                    <Text style={styles.valuePoint}>100 points</Text>
-                </View>
-            </View>
             <View style={styles.buttonAksi}>
-                <ButtonIcon title="Add Saldo"/>
+                <ButtonIcon title='Tukar Poin' />
                 <Gap width={10} />
-                <ButtonIcon title="Get Point"/>
+                <ButtonIcon title='Transaksi' />
+                <Gap width={10} />
+                <ButtonIcon title='Lokasi' />
             </View>
         </View>
     )
@@ -34,7 +26,7 @@ const windowHeight = Dimensions.get('window').height;
 const styles = StyleSheet.create({
     container: {
         backgroundColor: 'white',
-        padding: 17,
+        padding: 10,
         marginHorizontal: 30,
         borderRadius: 10,
         shadowColor: "#000",
@@ -52,9 +44,6 @@ const styles = StyleSheet.create({
     text: {
         flexDirection: 'row',
         justifyContent: 'space-between'
-    },
-    informasiSaldo: {
-        width: '60%',
     },
     labelSaldo: {
         fontSize: 20,
@@ -76,6 +65,8 @@ const styles = StyleSheet.create({
     buttonAksi: {
         flexDirection: 'row',
         marginLeft: 10,
-        justifyContent: 'flex-end'
+        justifyContent: 'space-between',
+        flexWrap: 'wrap',
+        alignItems: 'center'
     }
 })
