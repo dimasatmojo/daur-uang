@@ -2,7 +2,8 @@ import BottomNavigator from './BottomNavigator';
 import Saldo from './Saldo'
 import ButtonIcon from './ButtonIcon'
 import Gap from './Gap'
-import PesananAktif from './PesananAktif'
+import SetoranDiproses from './SetoranDiproses'
 import Separator from './Separator'
+import InfoPromo from './InfoPromo'
 
-export { BottomNavigator, Saldo, ButtonIcon, Gap, PesananAktif, Separator }
+export { BottomNavigator, Saldo, ButtonIcon, Gap, SetoranDiproses, Separator, InfoPromo }

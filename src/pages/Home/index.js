@@ -1,9 +1,26 @@
-import { StyleSheet, Text, View, ImageBackground, Dimensions, Image, ViewComponent } from 'react-native'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import {
+  StyleSheet,
+  Text,
+  View,
+  ImageBackground,
+  Dimensions,
+  Image,
+  ViewComponent,
+  FlatList
+} from 'react-native'
+import {
+  Saldo,
+  ButtonIcon,
+  SetoranDiproses,
+  Separator,
+  InfoPromo
+} from '../../components'
 import { ImageHeader, Logo } from '../../assets'
-import { Saldo, ButtonIcon, PesananAktif, Separator } from '../../components'
 import { ColorGrey } from '../../utils/constant'
 import { ScrollView } from 'react-native-gesture-handler'
+
+
 
 const Home = () => {
   return (
@@ -32,23 +49,20 @@ const Home = () => {
 
         </ImageBackground>
         <Saldo />
-        <View style={styles.layanan}>
+        <View style={styles.info}>
           <Text style={styles.label}>Daur info</Text>
-          <View style={styles.iconLayanan}>
-            <ButtonIcon title='Kiloan' type='layanan' />
-            <ButtonIcon title='Satuan' type='layanan' />
-            <ButtonIcon title='VIP' type='layanan' />
-            <ButtonIcon title='Karpet' type='layanan' />
-            <ButtonIcon title='Setrika' type='layanan' />
-            <ButtonIcon title='Ekspress' type='layanan' />
+          <View style={styles.promo}>
+            <InfoPromo />
+            <InfoPromo />
+            <InfoPromo />
           </View>
         </View>
-        <View style={styles.pesananAktif}>
+        <View style={styles.setoranDiproses}>
           <Text style={styles.label}>Setoran diproses</Text>
-          <PesananAktif title="Pesanan No. 0002142" status="Sudah Selesai" />
-          <PesananAktif title="Pesanan No. 0002142" status="Masih Dicuci" />
-          <PesananAktif title="Pesanan No. 0002142" status="Sudah Selesai" />
-          <PesananAktif title="Pesanan No. 0002142" status="Sudah Selesai" />
+          <SetoranDiproses title="202201212016000001" status="Menunggu Validasi" datetime="Jan 21, 2023" price="Rp. -" />
+          <SetoranDiproses title="202201212016000002" status="Diterima" datetime="Jan 22, 2023" price="Rp. 5.300" />
+          <SetoranDiproses title="202201212016000003" status="Menunggu Validasi" datetime="Jan 23, 2023" price="Rp. -" />
+          <SetoranDiproses title="202201212016000004" status="Diterima" datetime="Jan 24, 2023" price="Rp. 7.200"/>
         </View>
       </ScrollView>
     </View>
@@ -72,8 +86,8 @@ const styles = StyleSheet.create({
     paddingTop: 20
   },
   logo: {
-    width: windowWidth * 0.35,
-    height: windowHeight * 0.06,
+    width: windowWidth * 0.45,
+    height: windowHeight * 0.065,
     marginLeft: 'auto'
   },
   greetings: {
@@ -124,9 +138,10 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: 'Montserrat-Regular'
   },
-  layanan: {
+  info: {
     paddingLeft: 30,
-    paddingTop: 15
+    paddingTop: 15,
+    paddingBottom: 15
   },
   label: {
     fontSize: 18,
@@ -138,13 +153,18 @@ const styles = StyleSheet.create({
     marginTop: 12,
     flexWrap: 'wrap'
   },
-  pesananAktif: {
-    paddingTop: 10,
+  setoranDiproses: {
+    paddingTop: 15,
     paddingHorizontal: 30,
     backgroundColor: ColorGrey,
     flex: 1,
     borderTopRightRadius: 20,
     borderTopLeftRadius: 20,
+  },
+  promo: {
+    paddingTop: 10,
+    display: 'flex',
+    flexDirection: 'row'
   }
 
 })
